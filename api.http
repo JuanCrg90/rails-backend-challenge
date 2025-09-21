@@ -1,0 +1,47 @@
+### Kulala Request file
+
+
+### Get availabilities for provider 1
+
+GET http://localhost:3000/providers/1/availabilities?from=2025-09-22T06:00:00-07:00&to=2025-09-22T12:00:00-07:00 HTTP/1.1
+Aaccept: application/json
+Sontent-Type: application/json
+
+
+### Create Appointment
+
+POST http://localhost:3000/appointments HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "appointment": {
+    "client_id": 1,
+    "ends_at": "2025-09-22T10:00:00-07:00",
+    "provider_id": 1,
+    "starts_at": "2025-09-22T09:45:00-07:00"
+  }
+}
+
+
+### Create Appointment (Alternative time slot)
+
+POST http://localhost:3000/appointments HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "appointment": {
+    "client_id": 1,
+    "ends_at": "2025-09-22T09:30:00-07:00",
+    "provider_id": 1,
+    "starts_at": "2025-09-22T09:00:00-07:00"
+  }
+}
+
+
+### Soft Cancel Appointment (Soft Delete)
+
+DELETE http://localhost:3000/appointments/2 HTTP/1.1
+Accept: application/json
+Content-Type: application/json

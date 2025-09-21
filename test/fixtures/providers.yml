@@ -1,0 +1,20 @@
+one:
+  id: 1
+  first_name: sheldon
+  last_name: cooper
+  email: sheldon.cooper@test.com
+  location: 'Pasadena, California'
+
+two:
+  id: 2
+  first_name: leonard
+  last_name: hofstadter
+  email: leonard.hofstadter@test.com
+  location: 'Pasadena, California'
+
+three:
+  id: 3
+  first_name: rajesh
+  last_name: koothrappali
+  email: rajesh.koothrappali@test.com
+  location: 'Pasadena, California'

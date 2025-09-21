@@ -1,0 +1,59 @@
+p1_slot_early_morning:
+  provider_id: 1
+  remote_id: "p1-slot-early-morning"
+  day_of_week: 1
+  starts_at_minute: 390    # 06:30
+  ends_at_minute: 420      # 07:00
+  source: calendly
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
+
+p1_slot_morning_1:
+  provider_id: 1
+  remote_id: "p1-slot-morning-1"
+  day_of_week: 1
+  starts_at_minute: 540    # 09:00
+  ends_at_minute: 570      # 09:30
+  source: calendly
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
+
+p1_slot_morning_back_to_back:
+  provider_id: 1
+  remote_id: "p1-slot-morning-back-to-back"
+  day_of_week: 1
+  starts_at_minute: 585    # 09:45
+  ends_at_minute: 615      # 10:15
+  source: calendly
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
+
+p1_slot_evening_cross_midnight_monday:
+  provider_id: 1
+  remote_id: "p1-slot-evening-cross-midnight-monday"
+  day_of_week: 1          # monday
+  starts_at_minute: 1410  # 23:30
+  ends_at_minute: 1440    # 24:00
+  source: calendly
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
+
+p1_slot_evening_cross_midnight_tuesday:
+  provider_id: 1
+  remote_id: "p1-slot-evening-cross-midnight-tuesday"
+  day_of_week: 2          # tuesday
+  starts_at_minute: 0     # 00:00
+  ends_at_minute: 15      # 00:15
+  source: calendly
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
+
+p2_slot_overlap_tuesday:
+  provider_id: 2
+  remote_id: "p2-slot-overlap"
+  day_of_week: 2
+  starts_at_minute: 660    # 11:00
+  ends_at_minute: 690      # 11:30
+  source: calendly
+  created_at: <%= Time.current %>
+  updated_at: <%= Time.current %>
